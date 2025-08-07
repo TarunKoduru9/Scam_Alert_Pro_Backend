@@ -47,14 +47,14 @@ app.use(
 );
 
 
-app.use("/authscam", authRoutes);
-app.use(userRoutes);
-app.use(marqueeRoutes);
-app.use(complaintRoutes);
-app.use(emergencyRoutes);
-app.use(socialRoutes);
-app.use(searchRoutes);
-app.use(notificationsRoutes);
+app.use("/auth2", authRoutes);
+app.use("/auth2", userRoutes);
+app.use("/auth2", marqueeRoutes);
+app.use("/auth2", complaintRoutes);
+app.use("/auth2", emergencyRoutes);
+app.use("/auth2", socialRoutes);
+app.use("/auth2", searchRoutes);
+app.use("/auth2", notificationsRoutes);
 
 
 app.use("/admin",adminuserRoutes);
@@ -68,5 +68,5 @@ app.get("/ping", (req, res) => {
   res.status(200).json({ status: "ok", timestamp: new Date().toISOString() });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, "0.0.0.0", () => console.log(`Server running on ${PORT}`));
