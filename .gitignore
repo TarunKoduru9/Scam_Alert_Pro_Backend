@@ -1,0 +1,22 @@
+# Node modules (ignore all packages)
+**/node_modules/
+
+# Environment secrets
+**/.env
+
+# Log files
+*.log
+
+# Build output
+**/dist/
+**/build/
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# npm/yarn lock files (optional)
+**/package-lock.json
+**/yarn.lock
